@@ -134,12 +134,14 @@ body {
 /* Click action */
 .slider::-webkit-slider-thumb:active {
     background: hsl(174, 86%, 35%);
-    box-shadow: 0 5px 15px hsl(174, 86%, 85%)
+    box-shadow: 0 5px 15px hsl(174, 86%, 85%);
+    cursor: grab;
 }
 
 .slider::-moz-range-thumb:active {
     background: hsl(174, 86%, 35%);
-    box-shadow: 0 5px 15px hsl(174, 86%, 85%)
+    box-shadow: 0 5px 15px hsl(174, 86%, 85%);
+    cursor: grab;
 }
 
 /* Bottom Card */
