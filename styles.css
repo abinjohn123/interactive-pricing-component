@@ -40,6 +40,8 @@ body {
 /* CARD STYLES */
 .card {
     background-color: var(--white);
+    color: var(--text);
+
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
     max-width: 50rem;
@@ -54,8 +56,6 @@ body {
 .card-top {
     border-bottom: 1px solid var(--toggle-bg);
     padding: 4rem;
-
-    color: var(--text);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -140,4 +140,50 @@ body {
 .slider::-moz-range-thumb:active {
     background: hsl(174, 86%, 35%);
     box-shadow: 0 5px 15px hsl(174, 86%, 85%)
+}
+
+/* Bottom Card */
+.card-bottom {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.perks {
+    list-style: none;
+}
+
+.perks>li {
+    display: flex;
+    gap: 1rem;
+}
+
+.check {
+    color: var(--slider-bg);
+}
+
+.subscribe {
+    justify-self: end;
+}
+
+.btn-start {
+    background-color: var(--text-dark);
+    color: var(--cta-text);
+    font-weight: 600;
+
+    outline: none;
+    border: none;
+
+    border-radius: 2rem;
+    width: 16rem;
+    height: 4rem;
+    text-align: center;
+
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-start:hover {
+    color: var(--white);
 }
