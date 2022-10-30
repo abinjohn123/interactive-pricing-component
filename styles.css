@@ -49,6 +49,8 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* Top Card */
+
 .card-top {
     border-bottom: 1px solid var(--toggle-bg);
     padding: 4rem;
@@ -58,6 +60,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    row-gap: 4rem;
 }
 
 .pageviews {
@@ -77,4 +80,64 @@ body {
     color: var(--text-dark);
     font-weight: 800;
     font-size: 4rem;
+}
+
+.price-slider {
+    grid-column: 1/-1;
+}
+
+.slider {
+    /* Override default CSS styles */
+    -webkit-appearance: none;
+    appearance: none;
+    /* Full-width */
+    width: 100%;
+    /* Specified height */
+    height: 0.8rem;
+    border-radius: 10px;
+    outline: none;
+
+    background: var(--slider-empty);
+}
+
+/* Slider Handle */
+.slider::-webkit-slider-thumb {
+    /* Override default look */
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* Set a specific slider handle width */
+    height: 3.6rem;
+    width: 3.6rem;
+
+    background: var(--slider-bg);
+    box-shadow: 0 5px 15px hsl(174, 86%, 65%);
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: box-shadow 0.3s;
+
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 100px;
+    background: var(--slider-bg);
+    box-shadow: 0 5px 15px hsl(174, 86%, 65%);
+
+    cursor: pointer;
+
+    transition: box-shadow 0.3s;
+}
+
+/* Click action */
+.slider::-webkit-slider-thumb:active {
+    background: hsl(174, 86%, 35%);
+    box-shadow: 0 5px 15px hsl(174, 86%, 85%)
+}
+
+.slider::-moz-range-thumb:active {
+    background: hsl(174, 86%, 35%);
+    box-shadow: 0 5px 15px hsl(174, 86%, 85%)
 }
