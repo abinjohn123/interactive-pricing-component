@@ -161,11 +161,12 @@ body {
 
 .perks>li {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .check {
-    color: var(--slider-bg);
+    height: 12px;
 }
 
 .subscribe {
