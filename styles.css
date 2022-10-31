@@ -44,7 +44,7 @@ body {
 
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
-    max-width: 55rem;
+    max-width: 54rem;
     border-radius: 8px;
 
     display: grid;
@@ -55,7 +55,7 @@ body {
 
 .card-top {
     border-bottom: 1px solid var(--toggle-bg);
-    padding: 4rem;
+    padding: 5rem;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,7 +180,14 @@ body {
 .subscription-choice {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.subscription-choice p:first-child {
+    justify-self: end;
 }
 
 /* Slider Style */
@@ -189,8 +196,8 @@ body {
     /* background-color: peachpuff; */
 
     display: inline-block;
-    width: 50px;
-    height: 26px;
+    width: 48px;
+    height: 24px;
 }
 
 .slider-container>#sub-choice {
@@ -214,8 +221,8 @@ body {
 .sub-slider::before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     top: 3px;
     left: 4px;
     background-color: var(--white);
@@ -230,6 +237,22 @@ body {
 
 #sub-choice:checked+.sub-slider {
     background-color: var(--slider-bg)
+}
+
+/* Discount tag */
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount-tag {
+    background-color: var(--discount-bg);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--discount-text);
+    border-radius: 10px;
+    padding: 0.4rem 0.6rem;
 }
 
 /* Bottom Card */
