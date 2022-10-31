@@ -111,6 +111,9 @@ body {
     width: 3.6rem;
 
     background: var(--slider-bg);
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 5px 15px hsl(174, 86%, 65%);
 
     border-radius: 50%;
@@ -124,6 +127,9 @@ body {
     width: 25px;
     height: 100px;
     background: var(--slider-bg);
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 5px 15px hsl(174, 86%, 65%);
 
     cursor: pointer;
@@ -134,12 +140,18 @@ body {
 /* Click action */
 .slider::-webkit-slider-thumb:active {
     background: hsl(174, 86%, 35%);
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 5px 15px hsl(174, 86%, 85%);
     cursor: grab;
 }
 
 .slider::-moz-range-thumb:active {
     background: hsl(174, 86%, 35%);
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 5px 15px hsl(174, 86%, 85%);
     cursor: grab;
 }
