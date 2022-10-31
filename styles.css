@@ -176,6 +176,62 @@ body {
     cursor: grab;
 }
 
+/* Subscription Choice */
+.subscription-choice {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Slider Style */
+.slider-container {
+    position: relative;
+    /* background-color: peachpuff; */
+
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.slider-container>#sub-choice {
+    visibility: hidden;
+}
+
+.sub-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-bg);
+    -webkit-transition: .4s;
+    transition: .2s;
+    border-radius: 10000px
+}
+
+
+.sub-slider::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 3px;
+    left: 4px;
+    background-color: var(--white);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 10000px
+}
+
+#sub-choice:checked+.sub-slider::before {
+    left: 26px;
+}
+
+#sub-choice:checked+.sub-slider {
+    background-color: var(--slider-bg)
+}
+
 /* Bottom Card */
 .card-bottom {
     padding: 4rem;
