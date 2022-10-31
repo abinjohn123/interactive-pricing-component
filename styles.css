@@ -84,6 +84,7 @@ body {
 
 .price-slider {
     grid-column: 1/-1;
+    position: relative;
 }
 
 .slider {
@@ -93,11 +94,30 @@ body {
     /* Full-width */
     width: 100%;
     /* Specified height */
-    height: 0.8rem;
-    border-radius: 10px;
+    height: 0;
     outline: none;
 
+    position: absolute;
+    z-index: 2;
     background: var(--slider-empty);
+}
+
+/* Slider progress bar */
+.slider-bar {
+    position: absolute;
+    height: 0.8rem;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+}
+
+.slider-bar.--base {
+    width: 100%;
+    background-color: var(--slider-empty);
+}
+
+.slider-bar.--progress {
+    width: 50%;
+    background-color: var(--slider-bg);
 }
 
 /* Slider Handle */
