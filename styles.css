@@ -190,7 +190,7 @@ body {
     justify-self: end;
 }
 
-/* Slider Style */
+/* Switch Style */
 .slider-container {
     position: relative;
     /* background-color: peachpuff; */
@@ -303,4 +303,40 @@ body {
 
 .btn-start:hover {
     color: var(--white);
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+    .card-top {
+        grid-template-columns: 1fr;
+        row-gap: 4.5rem;
+        padding: 3.6rem 3rem;
+    }
+
+    .card-bottom {
+        grid-template-columns: 1fr;
+        row-gap: 3.2rem;
+    }
+
+    .pageviews {
+        order: 0;
+        text-align: center;
+    }
+
+    .price-info {
+        order: 1;
+        justify-self: center;
+    }
+
+    .subscription-choice {
+        order: 2;
+    }
+
+    .perks>li {
+        justify-content: center;
+    }
+
+    .subscribe {
+        justify-self: center;
+    }
 }
