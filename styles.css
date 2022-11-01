@@ -243,7 +243,12 @@ body {
 .discount {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+}
+
+.discount-choice {
+    flex-shrink: 0;
 }
 
 .discount-tag {
