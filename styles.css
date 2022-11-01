@@ -118,6 +118,8 @@ body {
 .slider-bar.--progress {
     width: 50%;
     background-color: var(--slider-bg);
+    transition: background-color 0.3s;
+
 }
 
 /* Slider Handle */
