@@ -249,9 +249,6 @@ body {
     gap: 1rem;
 }
 
-.discount-choice {
-    flex-shrink: 0;
-}
 
 .discount-tag {
     background-color: var(--discount-bg);
@@ -337,6 +334,7 @@ body {
 
     .subscription-choice {
         order: 2;
+        column-gap: 1rem;
     }
 
     .perks>li {
