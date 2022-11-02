@@ -2,8 +2,8 @@
 
 :root {
     /* Primary */
-    --slider-full: hsl(174, 77%, 80%);
-    --slider-bg: hsl(174, 86%, 45%);
+    --slider-bg: hsl(174, 77%, 80%);
+    --slider-full: hsl(174, 86%, 45%);
     --discount-bg: hsl(14, 92%, 95%);
     --discount-text: hsl(15, 100%, 70%);
     --cta-text: hsl(226, 100%, 87%);
@@ -34,7 +34,7 @@ body {
     background-color: var(--bg);
 
     /* temp */
-    padding: 4rem;
+    padding: 2.4rem;
 }
 
 /* CARD STYLES */
@@ -132,7 +132,7 @@ body {
     height: 4rem;
     width: 4rem;
 
-    background: var(--slider-bg);
+    background: var(--slider-full);
     background-image: url(images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -148,7 +148,7 @@ body {
 .slider::-moz-range-thumb {
     height: 4rem;
     width: 4rem;
-    background: var(--slider-bg);
+    background: var(--slider-full);
     background-image: url(images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -238,7 +238,7 @@ body {
 }
 
 #sub-choice:checked+.sub-slider {
-    background-color: var(--slider-bg)
+    background-color: var(--slider-full)
 }
 
 /* Discount tag */
