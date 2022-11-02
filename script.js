@@ -35,7 +35,13 @@ function updateDOM() {
   const { pageviews, price } = pricingOptions[sliderValue];
   pageViewsEl.innerText = `${pageviews} PAGEVIEWS`;
 
-  priceEl.innerText = `$${price.toFixed(2)}`;
+  if (subscriptionType.checked) {
+    priceEl.innerText = `$${(price * 0.75).toFixed(2)}`;
+    monthYearEl.innerText = '/ year';
+  } else {
+    priceEl.innerText = `$${price.toFixed(2)}`;
+    monthYearEl.innerText = '/ month';
+  }
 }
 
 function sliderChangeHandler(e) {
@@ -62,6 +68,6 @@ function responsiveDesign() {
 
 priceSlider.addEventListener('input', sliderChangeHandler);
 addEventListener('resize', responsiveDesign);
-
+subscriptionType.addEventListener('change', updateDOM);
 // init
 responsiveDesign();
