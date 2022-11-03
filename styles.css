@@ -33,8 +33,40 @@ body {
     font-weight: 600;
     background-color: var(--bg);
 
-    /* temp */
-    padding: 2.4rem;
+}
+
+/* HEADER */
+.header {
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    z-index: 2;
+}
+
+.title {
+    color: var(--text-dark);
+}
+
+.subtitle {
+    color: var(--text);
+    font-size: 1.5rem;
 }
 
 /* CARD STYLES */
