@@ -59,7 +59,7 @@ function sliderChangeHandler(e) {
 }
 
 function responsiveDesign() {
-  if (window.innerWidth > 500) {
+  if (window.innerWidth > 562) {
     discountTagEl.innerText = '25% discount';
   } else {
     discountTagEl.innerText = '-25%';
